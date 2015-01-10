@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<ul>
+  {% for stream in object_list %}
+  <li>
+	<!-- photo: {{ stream.photo }}
+		 tweet: {{ stream.tweet }}
+		 -->
+	{% if stream.photo %}
+	<img src="{{ stream.photo.url }}" />
+	{% endif %}
+	{% if stream.tweet %}
+	<p>{{ stream.tweet.text }}</p>
+	{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
