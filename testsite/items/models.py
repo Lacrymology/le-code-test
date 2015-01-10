@@ -14,6 +14,9 @@ class ItemAbstract(models.Model):
 class PhotoItem(ItemAbstract):
     image = models.ImageField()
 
+    def url(self):
+        return self.image.url
+
 
 class TweetItem(ItemAbstract):
     text = models.CharField(max_length=150)
