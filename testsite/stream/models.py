@@ -19,6 +19,9 @@ class Stream(models.Model):
     objects = models.Manager()
     active = ActiveStreamManager()
 
+    class Meta:
+        ordering = ('-created_at',)
+
     def clean(self):
         if not (self.photo or self.tweet):
             raise ValidationError("Stream must have either a tweet or a photo")
