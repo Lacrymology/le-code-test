@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 class ItemAbstract(models.Model):
     user = models.ForeignKey(User)
     created_at = models.DateTimeField()
+    deleted = models.BooleanField(default=False)
 
     class Meta:
         abstract = True
