@@ -5,7 +5,8 @@ from django.contrib.auth.models import User
 
 class Stream(models.Model):
     user = models.ForeignKey(User)
-    created_at = models.DateTimeField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
     photo = models.ForeignKey('items.PhotoItem', blank=True, null=True)
     tweet = models.ForeignKey('items.TweetItem', blank=True, null=True)
 
