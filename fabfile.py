@@ -24,5 +24,5 @@ def requirements():
 
 
 def sample_data():
-    run_manage('flush')
+    run_manage('flush --noinput')
     run_manage('loaddata /vagrant/testsite/testsite/fixtures/testdata.json')
