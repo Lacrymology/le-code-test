@@ -13,8 +13,8 @@ class Stream(models.Model):
     user = models.ForeignKey(User)
     created_at = models.DateTimeField(auto_now_add=True)
 
-    photo = models.ForeignKey('items.PhotoItem', blank=True, null=True)
-    tweet = models.ForeignKey('items.TweetItem', blank=True, null=True)
+    photo = models.OneToOneField('items.PhotoItem', blank=True, null=True)
+    tweet = models.OneToOneField('items.TweetItem', blank=True, null=True)
 
     objects = models.Manager()
     active = ActiveStreamManager()
@@ -25,3 +25,9 @@ class Stream(models.Model):
     def clean(self):
         if not (self.photo or self.tweet):
             raise ValidationError("Stream must have either a tweet or a photo")
+        for item in (self.photo, self.tweet):
+            if item:
+                if not self.user == item.user:
+                    raise ValidationError("Stream and their items must be "
+                                          "owned by The same user")
+
