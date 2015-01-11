@@ -7,10 +7,10 @@
 	<!-- photo: {{ stream.photo }}
 		 tweet: {{ stream.tweet }}
 		 -->
-	{% if stream.photo %}
+	{% if stream.photo and not stream.photo.deleted %}
 	<img src="{{ stream.photo.url }}" />
 	{% endif %}
-	{% if stream.tweet %}
+	{% if stream.tweet and not stream.tweet.deleted %}
 	<p>{{ stream.tweet.text }}</p>
 	{% endif %}
   </li>
