@@ -31,3 +31,6 @@ class Stream(models.Model):
                     raise ValidationError("Stream and their items must be "
                                           "owned by The same user")
 
+    def __unicode__(self):
+        return "Stream object #{id} ({user})".format(
+            id=self.id, user=self.user)
