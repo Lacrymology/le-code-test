@@ -1,0 +1,811 @@
+[
+{
+ "fields": {
+  "model": "logentry",
+  "name": "log entry",
+  "app_label": "admin"
+ },
+ "model": "contenttypes.contenttype",
+ "pk": 1
+},
+{
+ "fields": {
+  "model": "permission",
+  "name": "permission",
+  "app_label": "auth"
+ },
+ "model": "contenttypes.contenttype",
+ "pk": 2
+},
+{
+ "fields": {
+  "model": "group",
+  "name": "group",
+  "app_label": "auth"
+ },
+ "model": "contenttypes.contenttype",
+ "pk": 3
+},
+{
+ "fields": {
+  "model": "user",
+  "name": "user",
+  "app_label": "auth"
+ },
+ "model": "contenttypes.contenttype",
+ "pk": 4
+},
+{
+ "fields": {
+  "model": "contenttype",
+  "name": "content type",
+  "app_label": "contenttypes"
+ },
+ "model": "contenttypes.contenttype",
+ "pk": 5
+},
+{
+ "fields": {
+  "model": "session",
+  "name": "session",
+  "app_label": "sessions"
+ },
+ "model": "contenttypes.contenttype",
+ "pk": 6
+},
+{
+ "fields": {
+  "model": "stream",
+  "name": "stream",
+  "app_label": "stream"
+ },
+ "model": "contenttypes.contenttype",
+ "pk": 7
+},
+{
+ "fields": {
+  "model": "photoitem",
+  "name": "photo item",
+  "app_label": "items"
+ },
+ "model": "contenttypes.contenttype",
+ "pk": 8
+},
+{
+ "fields": {
+  "model": "tweetitem",
+  "name": "tweet item",
+  "app_label": "items"
+ },
+ "model": "contenttypes.contenttype",
+ "pk": 9
+},
+{
+ "fields": {
+  "expire_date": "2015-01-25T02:03:46.165Z",
+  "session_data": "Yjc5MzA4MTdiZGViMTU1NTZlZDEyZDZhNzM2OWYwYTlmMGJiZDViZTp7Il9hdXRoX3VzZXJfaGFzaCI6ImVjN2YwNjVhZjg2NzEzOTg1NzdlMzU5MmQ0MjRiNTAzNWRjYmYyYWEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjF9"
+ },
+ "model": "sessions.session",
+ "pk": "m34o4sdnpzop1hzv93ky62v9cavpm2xy"
+},
+{
+ "fields": {
+  "codename": "add_logentry",
+  "name": "Can add log entry",
+  "content_type": [
+   "admin",
+   "logentry"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 1
+},
+{
+ "fields": {
+  "codename": "change_logentry",
+  "name": "Can change log entry",
+  "content_type": [
+   "admin",
+   "logentry"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 2
+},
+{
+ "fields": {
+  "codename": "delete_logentry",
+  "name": "Can delete log entry",
+  "content_type": [
+   "admin",
+   "logentry"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 3
+},
+{
+ "fields": {
+  "codename": "add_permission",
+  "name": "Can add permission",
+  "content_type": [
+   "auth",
+   "permission"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 4
+},
+{
+ "fields": {
+  "codename": "change_permission",
+  "name": "Can change permission",
+  "content_type": [
+   "auth",
+   "permission"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 5
+},
+{
+ "fields": {
+  "codename": "delete_permission",
+  "name": "Can delete permission",
+  "content_type": [
+   "auth",
+   "permission"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 6
+},
+{
+ "fields": {
+  "codename": "add_group",
+  "name": "Can add group",
+  "content_type": [
+   "auth",
+   "group"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 7
+},
+{
+ "fields": {
+  "codename": "change_group",
+  "name": "Can change group",
+  "content_type": [
+   "auth",
+   "group"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 8
+},
+{
+ "fields": {
+  "codename": "delete_group",
+  "name": "Can delete group",
+  "content_type": [
+   "auth",
+   "group"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 9
+},
+{
+ "fields": {
+  "codename": "add_user",
+  "name": "Can add user",
+  "content_type": [
+   "auth",
+   "user"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 10
+},
+{
+ "fields": {
+  "codename": "change_user",
+  "name": "Can change user",
+  "content_type": [
+   "auth",
+   "user"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 11
+},
+{
+ "fields": {
+  "codename": "delete_user",
+  "name": "Can delete user",
+  "content_type": [
+   "auth",
+   "user"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 12
+},
+{
+ "fields": {
+  "codename": "add_contenttype",
+  "name": "Can add content type",
+  "content_type": [
+   "contenttypes",
+   "contenttype"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 13
+},
+{
+ "fields": {
+  "codename": "change_contenttype",
+  "name": "Can change content type",
+  "content_type": [
+   "contenttypes",
+   "contenttype"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 14
+},
+{
+ "fields": {
+  "codename": "delete_contenttype",
+  "name": "Can delete content type",
+  "content_type": [
+   "contenttypes",
+   "contenttype"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 15
+},
+{
+ "fields": {
+  "codename": "add_session",
+  "name": "Can add session",
+  "content_type": [
+   "sessions",
+   "session"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 16
+},
+{
+ "fields": {
+  "codename": "change_session",
+  "name": "Can change session",
+  "content_type": [
+   "sessions",
+   "session"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 17
+},
+{
+ "fields": {
+  "codename": "delete_session",
+  "name": "Can delete session",
+  "content_type": [
+   "sessions",
+   "session"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 18
+},
+{
+ "fields": {
+  "codename": "add_stream",
+  "name": "Can add stream",
+  "content_type": [
+   "stream",
+   "stream"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 19
+},
+{
+ "fields": {
+  "codename": "change_stream",
+  "name": "Can change stream",
+  "content_type": [
+   "stream",
+   "stream"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 20
+},
+{
+ "fields": {
+  "codename": "delete_stream",
+  "name": "Can delete stream",
+  "content_type": [
+   "stream",
+   "stream"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 21
+},
+{
+ "fields": {
+  "codename": "add_photoitem",
+  "name": "Can add photo item",
+  "content_type": [
+   "items",
+   "photoitem"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 22
+},
+{
+ "fields": {
+  "codename": "change_photoitem",
+  "name": "Can change photo item",
+  "content_type": [
+   "items",
+   "photoitem"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 23
+},
+{
+ "fields": {
+  "codename": "delete_photoitem",
+  "name": "Can delete photo item",
+  "content_type": [
+   "items",
+   "photoitem"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 24
+},
+{
+ "fields": {
+  "codename": "add_tweetitem",
+  "name": "Can add tweet item",
+  "content_type": [
+   "items",
+   "tweetitem"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 25
+},
+{
+ "fields": {
+  "codename": "change_tweetitem",
+  "name": "Can change tweet item",
+  "content_type": [
+   "items",
+   "tweetitem"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 26
+},
+{
+ "fields": {
+  "codename": "delete_tweetitem",
+  "name": "Can delete tweet item",
+  "content_type": [
+   "items",
+   "tweetitem"
+  ]
+ },
+ "model": "auth.permission",
+ "pk": 27
+},
+{
+ "fields": {
+  "username": "vagrant",
+  "first_name": "",
+  "last_name": "",
+  "is_active": true,
+  "is_superuser": true,
+  "is_staff": true,
+  "last_login": "2015-01-11T02:03:46.162Z",
+  "groups": [],
+  "user_permissions": [],
+  "password": "pbkdf2_sha256$12000$RLIrYaYlPb8O$ds0YoWoZp8PaOKTBPrYenKJA5i1xmXH9hBsz22jl6dM=",
+  "email": "",
+  "date_joined": "2015-01-11T02:03:39.259Z"
+ },
+ "model": "auth.user",
+ "pk": 1
+},
+{
+ "fields": {
+  "photo": null,
+  "created_at": "2015-01-11T02:04:21.674Z",
+  "tweet": 1,
+  "user": [
+   "vagrant"
+  ]
+ },
+ "model": "stream.stream",
+ "pk": 1
+},
+{
+ "fields": {
+  "photo": 1,
+  "created_at": "2015-01-11T02:05:12.298Z",
+  "tweet": null,
+  "user": [
+   "vagrant"
+  ]
+ },
+ "model": "stream.stream",
+ "pk": 2
+},
+{
+ "fields": {
+  "photo": null,
+  "created_at": "2015-01-11T02:05:44.468Z",
+  "tweet": 2,
+  "user": [
+   "vagrant"
+  ]
+ },
+ "model": "stream.stream",
+ "pk": 3
+},
+{
+ "fields": {
+  "photo": 2,
+  "created_at": "2015-01-11T02:06:47.680Z",
+  "tweet": 3,
+  "user": [
+   "vagrant"
+  ]
+ },
+ "model": "stream.stream",
+ "pk": 4
+},
+{
+ "fields": {
+  "photo": 3,
+  "created_at": "2015-01-11T02:42:52.855Z",
+  "tweet": 4,
+  "user": [
+   "vagrant"
+  ]
+ },
+ "model": "stream.stream",
+ "pk": 5
+},
+{
+ "fields": {
+  "deleted": false,
+  "created_at": "2015-01-11T02:05:00.003Z",
+  "user": [
+   "vagrant"
+  ],
+  "image": "./classroom.gif"
+ },
+ "model": "items.photoitem",
+ "pk": 1
+},
+{
+ "fields": {
+  "deleted": false,
+  "created_at": "2015-01-11T02:06:39.833Z",
+  "user": [
+   "vagrant"
+  ],
+  "image": "./classroom_6UyHXjH.gif"
+ },
+ "model": "items.photoitem",
+ "pk": 2
+},
+{
+ "fields": {
+  "deleted": true,
+  "created_at": "2015-01-11T02:42:24.620Z",
+  "user": [
+   "vagrant"
+  ],
+  "image": "./classroom_AFDTmqX.gif"
+ },
+ "model": "items.photoitem",
+ "pk": 3
+},
+{
+ "fields": {
+  "deleted": false,
+  "text": "First stream element",
+  "created_at": "2015-01-11T02:04:18.058Z",
+  "user": [
+   "vagrant"
+  ]
+ },
+ "model": "items.tweetitem",
+ "pk": 1
+},
+{
+ "fields": {
+  "deleted": true,
+  "text": "Third stream element (deleted)",
+  "created_at": "2015-01-11T02:05:38.362Z",
+  "user": [
+   "vagrant"
+  ]
+ },
+ "model": "items.tweetitem",
+ "pk": 2
+},
+{
+ "fields": {
+  "deleted": false,
+  "text": "Fourth item, with photo",
+  "created_at": "2015-01-11T02:06:21.946Z",
+  "user": [
+   "vagrant"
+  ]
+ },
+ "model": "items.tweetitem",
+ "pk": 3
+},
+{
+ "fields": {
+  "deleted": false,
+  "text": "Fifth item, with deleted photo",
+  "created_at": "2015-01-11T02:42:49.801Z",
+  "user": [
+   "vagrant"
+  ]
+ },
+ "model": "items.tweetitem",
+ "pk": 4
+},
+{
+ "fields": {
+  "action_flag": 1,
+  "action_time": "2015-01-11T02:04:18.060Z",
+  "object_repr": "TweetItem object",
+  "object_id": "1",
+  "change_message": "",
+  "user": [
+   "vagrant"
+  ],
+  "content_type": [
+   "items",
+   "tweetitem"
+  ]
+ },
+ "model": "admin.logentry",
+ "pk": 1
+},
+{
+ "fields": {
+  "action_flag": 1,
+  "action_time": "2015-01-11T02:04:21.675Z",
+  "object_repr": "Stream object",
+  "object_id": "1",
+  "change_message": "",
+  "user": [
+   "vagrant"
+  ],
+  "content_type": [
+   "stream",
+   "stream"
+  ]
+ },
+ "model": "admin.logentry",
+ "pk": 2
+},
+{
+ "fields": {
+  "action_flag": 1,
+  "action_time": "2015-01-11T02:05:00.008Z",
+  "object_repr": "PhotoItem object",
+  "object_id": "1",
+  "change_message": "",
+  "user": [
+   "vagrant"
+  ],
+  "content_type": [
+   "items",
+   "photoitem"
+  ]
+ },
+ "model": "admin.logentry",
+ "pk": 3
+},
+{
+ "fields": {
+  "action_flag": 1,
+  "action_time": "2015-01-11T02:05:12.299Z",
+  "object_repr": "Stream object",
+  "object_id": "2",
+  "change_message": "",
+  "user": [
+   "vagrant"
+  ],
+  "content_type": [
+   "stream",
+   "stream"
+  ]
+ },
+ "model": "admin.logentry",
+ "pk": 4
+},
+{
+ "fields": {
+  "action_flag": 1,
+  "action_time": "2015-01-11T02:05:38.364Z",
+  "object_repr": "TweetItem object",
+  "object_id": "2",
+  "change_message": "",
+  "user": [
+   "vagrant"
+  ],
+  "content_type": [
+   "items",
+   "tweetitem"
+  ]
+ },
+ "model": "admin.logentry",
+ "pk": 5
+},
+{
+ "fields": {
+  "action_flag": 1,
+  "action_time": "2015-01-11T02:05:44.470Z",
+  "object_repr": "Stream object",
+  "object_id": "3",
+  "change_message": "",
+  "user": [
+   "vagrant"
+  ],
+  "content_type": [
+   "stream",
+   "stream"
+  ]
+ },
+ "model": "admin.logentry",
+ "pk": 6
+},
+{
+ "fields": {
+  "action_flag": 1,
+  "action_time": "2015-01-11T02:06:21.947Z",
+  "object_repr": "TweetItem object",
+  "object_id": "3",
+  "change_message": "",
+  "user": [
+   "vagrant"
+  ],
+  "content_type": [
+   "items",
+   "tweetitem"
+  ]
+ },
+ "model": "admin.logentry",
+ "pk": 7
+},
+{
+ "fields": {
+  "action_flag": 1,
+  "action_time": "2015-01-11T02:06:39.838Z",
+  "object_repr": "PhotoItem object",
+  "object_id": "2",
+  "change_message": "",
+  "user": [
+   "vagrant"
+  ],
+  "content_type": [
+   "items",
+   "photoitem"
+  ]
+ },
+ "model": "admin.logentry",
+ "pk": 8
+},
+{
+ "fields": {
+  "action_flag": 1,
+  "action_time": "2015-01-11T02:06:47.681Z",
+  "object_repr": "Stream object",
+  "object_id": "4",
+  "change_message": "",
+  "user": [
+   "vagrant"
+  ],
+  "content_type": [
+   "stream",
+   "stream"
+  ]
+ },
+ "model": "admin.logentry",
+ "pk": 9
+},
+{
+ "fields": {
+  "action_flag": 1,
+  "action_time": "2015-01-11T02:42:24.624Z",
+  "object_repr": "[x] PhotoItem #3 (vagrant)",
+  "object_id": "3",
+  "change_message": "",
+  "user": [
+   "vagrant"
+  ],
+  "content_type": [
+   "items",
+   "photoitem"
+  ]
+ },
+ "model": "admin.logentry",
+ "pk": 10
+},
+{
+ "fields": {
+  "action_flag": 1,
+  "action_time": "2015-01-11T02:42:49.802Z",
+  "object_repr": "TweetItem #4 (vagrant)",
+  "object_id": "4",
+  "change_message": "",
+  "user": [
+   "vagrant"
+  ],
+  "content_type": [
+   "items",
+   "tweetitem"
+  ]
+ },
+ "model": "admin.logentry",
+ "pk": 11
+},
+{
+ "fields": {
+  "action_flag": 1,
+  "action_time": "2015-01-11T02:42:52.856Z",
+  "object_repr": "Stream object #5 (vagrant)",
+  "object_id": "5",
+  "change_message": "",
+  "user": [
+   "vagrant"
+  ],
+  "content_type": [
+   "stream",
+   "stream"
+  ]
+ },
+ "model": "admin.logentry",
+ "pk": 12
+},
+{
+ "fields": {
+  "action_flag": 2,
+  "action_time": "2015-01-11T02:43:08.842Z",
+  "object_repr": "TweetItem #4 (vagrant)",
+  "object_id": "4",
+  "change_message": "Changed text.",
+  "user": [
+   "vagrant"
+  ],
+  "content_type": [
+   "items",
+   "tweetitem"
+  ]
+ },
+ "model": "admin.logentry",
+ "pk": 13
+}
+]
