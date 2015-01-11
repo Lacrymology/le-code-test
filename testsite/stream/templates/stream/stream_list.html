@@ -4,11 +4,11 @@
 <ul>
   {% for stream in object_list %}
   <li>
-	{% if stream.photo and not stream.photo.deleted %}
-	<img src="{{ stream.photo.url }}" />
-	{% endif %}
 	{% if stream.tweet and not stream.tweet.deleted %}
 	<p>{{ stream.tweet.text }}</p>
+	{% endif %}
+	{% if stream.photo and not stream.photo.deleted %}
+	<img src="{{ stream.photo.url }}" />
 	{% endif %}
   </li>
   {% endfor %}
