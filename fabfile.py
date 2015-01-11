@@ -16,3 +16,7 @@ def make_migrations():
 
 def requirements():
     local('/home/vagrant/.virtualenvs/le-code-test/bin/pip install -r requirements.txt ')
+
+def sample_data():
+    run_manage('flush')
+    run_manage('loaddata /vagrant/testsite/testsite/fixtures/testdata.json')
